@@ -9,6 +9,7 @@ const Login = () => {
   const [pw, setPw] = useState("");
   const token = signal("");
 
+  
   //Tähän preventDefault funktio, joka estää lomakkeen lähetyksen
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -27,12 +28,12 @@ const Login = () => {
         <form onSubmit={handleSubmit}>
           <h3 className="text-center">Sign In</h3>
           <div className="mb-2">
-            <label htmlFor="email">Email</label>
+            <label htmlFor="username">Username</label>
             <input
               value={username}
               onChange={(e) => setUsername(e.target.value)}
-              type="email"
-              placeholder="Enter Email"
+              type="username"
+              placeholder="Enter Username"
               className="form-control"
             />
           </div>
